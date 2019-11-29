@@ -41,5 +41,13 @@ describe("Simple Calculator Multiply Method.", function(){
 	});
 });
 
-describe("Set Slot Method", function(){
-	it("should be able to set a new slot
+describe("Set and Get Slot Methods", function(){
+	it("should be able to set a slot for SLOT_1 and SLOT_2 and get each slot", function(){
+	calculator.add(1,2);
+	calculator.set_slot(1);
+	calculator.multiply("LAST",2);
+	calculator.set_slot(2);
+	expect(calculator.get_slot(1)).toBe(3);
+	expect(calculator.get_slot(2)).toBe(6);
+	});
+});
