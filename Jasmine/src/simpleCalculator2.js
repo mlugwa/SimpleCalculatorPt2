@@ -92,3 +92,5 @@ class SimpleCalc{
 	}
 
 }
+
+module.exports = SimpleCalc;

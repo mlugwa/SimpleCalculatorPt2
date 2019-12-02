@@ -1,3 +1,5 @@
+var SimpleCalc = require('../src/simpleCalculator2.js');
+
 var calculator = new SimpleCalc();
 describe("Simple Calculator Add Method", function(){
 	it("should be able to add two positive numbers.", function(){
